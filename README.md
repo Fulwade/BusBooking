@@ -1,4 +1,4 @@
-# BusBooking
+# Bus Booking System Website
 Online Bus Booking System Using .NET framework with the help of C# lang and SQL for Database
 
 # Discription
