@@ -1,0 +1,159 @@
+conditional statments:
+
+if statment:
+
+syntax:
+
+if(condition)
+{
+statment block;
+}
+
+
+WAP in c# to accept a no from user and display the cube if no is even.
+WAP in c# to accept a no from user and display square if no is positive
+
+static void Main(string[] args)
+        {
+            int num;
+            Console.WriteLine("Enter a number");
+            num = Convert.ToInt32(Console.ReadLine());
+            if (num % 2 == 0)
+            {
+                Console.WriteLine("The cube of {0} is = {1}",num,num*num*num);
+            }
+            Console.WriteLine("End of the program :) ");
+            Console.ReadKey();
+
+        }
+
+
+
+if  else statment:
+
+syntax:
+
+if(condition)
+{
+statment block;
+}
+else
+{
+statment block
+}
+
+WAP in C# to accept two numbers from user and find out tthe greatest.
+static void Main(string[] args)
+        {
+            int num1,num2;
+            Console.WriteLine("Enter Two number");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            num2 = Convert.ToInt32(Console.ReadLine());
+            if (num1 > num2)
+            {
+                Console.WriteLine("The {0} is greater.", num1);
+            }
+            else 
+            {
+                Console.WriteLine("The {0} is greater.", num2);
+            }
+            Console.WriteLine("End of the program :) ");
+            Console.ReadKey();
+
+        }
+
+
+ else if  statment:
+
+syntax:
+
+if(condition)
+{
+statment block;
+}
+else if(condition)
+{
+statment block
+}
+else if(condition)
+{
+Statment block;
+}
+WAP to accept sp and cp from user and calculate the profit and loss.
+
+static void Main(string[] args)
+        {
+            int cp,sp;
+            Console.WriteLine("Enter selling price");
+            sp = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter cost price");
+            cp = Convert.ToInt32(Console.ReadLine());
+            int res;
+            res = sp - cp;
+            if (res==0)
+            {
+                Console.WriteLine("no profit no loss");
+            }
+            else  if (res>0)
+            {
+                Console.WriteLine("The profit is = {0}.", res);
+            }
+            else 
+            {
+                Console.WriteLine("The loss is = {0}", -res);
+            }
+            Console.WriteLine("End of the program :) ");
+            Console.ReadKey();
+
+        }
+Switch Case:
+
+WAP in C# to accept choice from user and accordingly display the output
+1:atm pin change
+2:withdraw
+3:balance slip
+4:details
+
+ static void Main(string[] args)
+        {
+            int ch;
+            Console.WriteLine("Enter Your choice.\n1:Pin change \n2:Withdraw \n3:Slip \n4:Details");
+            ch = Convert.ToInt32(Console.ReadLine());
+            switch (ch)
+            {
+                case 1:
+                    Console.WriteLine("Pin Change program :) ");
+                    break;
+                case 2:
+                    Console.WriteLine("Withdraw program :) ");
+                    break;
+                case 3:
+                    Console.WriteLine("Slip print program :) ");
+                    break;
+                case 4:
+                    Console.WriteLine("Details program :) ");
+                    break;
+                default:
+                    Console.WriteLine("Invalid choice :) ");
+                    break;
+            }
+            Console.WriteLine("End of the program :) ");
+            Console.ReadKey();
+
+        }
+
+WAP in C# to accept choice from user and accordingly display the output
+1:Arithmetic opertaion
+2:Greater between 3 no
+3:Even odd
+4:Vowel
+5:Name of month
+6:Days
+
+Nested:
+
+
+WAP to accept age and gender from user and display the IR.
+above 60     M 7%
+	f=7.5% IR
+below 60 5% IR

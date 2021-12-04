@@ -1,0 +1,65 @@
+using System;
+namespace Bank{
+    class Program{
+        static void Main(string[] args){
+            C obj1 = new C();
+            obj1.finalAmt();
+        }
+    }
+    class A{
+        public int accNo, i, mainBal;
+        public void userInfo(){
+            Console.WriteLine("Enter the Account Number");
+            accNo = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Main Balance");
+            mainBal = Convert.ToInt32(Console.ReadLine());
+        }
+    }
+    class B : A {
+        public int choice;
+        public int[] arr = new int[10];
+        public int[] accept()
+        {
+            userInfo();
+            Console.WriteLine("Select : 1.Credit \t 2.Debit ");
+            choice = Convert.ToInt32(Console.ReadLine());
+            if (choice ==1  || choice == 2)
+            {
+                Console.WriteLine("Enter 10 Transaction: ");
+                for (i = 0; i < 10; i++)
+                {
+                    arr[i] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            else
+            {
+                Console.WriteLine("Wrong Choice");
+            }
+            return arr;
+        }
+    }
+    class C : B
+    {
+        public void finalAmt()
+        {
+            int[] arr1 = accept();
+            if (choice == 2)
+            {
+                for (i = 0; i < 10; i++)
+                {
+                    mainBal = mainBal - arr1[i];
+                }
+                Console.WriteLine("\nFinal amount is = {0}", mainBal);
+            }
+            else if(choice == 1)
+            {
+                for (i = 0; i < 10; i++)
+                {
+                    mainBal = mainBal + arr1[i];
+                }
+                Console.WriteLine("\nFinal amount is = {0}", mainBal);
+            }
+        }
+    }
+
+}
