@@ -1,4 +1,4 @@
-1)Write a program to calculate the roots of Quadratic equations.
+// 1)Write a program to calculate the roots of Quadratic equations.
 
 using System;
 
