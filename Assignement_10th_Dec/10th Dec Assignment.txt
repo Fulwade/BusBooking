@@ -1,0 +1,20 @@
+1	Create class point with following instance variable and methods.
+
+Instance variable: private int x,y
+Constructors	: public Point(), Point(int x, int y)
+Methods	:	public void setX(int x), setY(int y), setXY(int x, int y)
+
+2	Create class Number with only one private instance variable as a double primitive type. To include the following methods (include respective constructors) isZero( ), isPositive(), isNegative( ), isOdd( ), isEven( ), isPrime(), isAmstrong() the above methods return boolean primitive type. getFactorial(), getSqrt(), getSqr(), sumDigits(), getReverse() the above methods return double primitive type. void listFactor(), void dispBinary().
+3	Write a program to create a package named mypack and import it in circle class.
+4	Write a program to create a package named pl, and implement this package in ex1 class.
+
+5	Write a program to create automatic type conversions apply to overriding.
+6	Create class box and box3d. box3d is extended class of box. The above two classes going to pull fill following requirement
+
+	Include constructor.
+	set value of length, breadth, height
+	Find out area and volume.
+
+Note: Base class and sub classes have respective methods and instance variables.
+
+7	Write a program using vector class.
